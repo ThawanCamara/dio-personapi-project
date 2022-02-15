@@ -1,6 +1,5 @@
 package one.digitalinnovation.personapi.dto.request;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -35,9 +34,9 @@ public class PersonDTO {
 	@CPF
 	private String cpf;
 	
-	private LocalDate birthDate;
+	private String  birthDate;
 	
 	@Valid
 	@NotEmpty
-	private List<Phone> phones;
+	private List<PhoneDTO> phones;
 }
